@@ -1,0 +1,32 @@
+/* ---- RESET ---- */
+
+*, .container-fluid{
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	font-size: 1em;
+	font-family: 'Wire One', sans-serif;
+	font-weight: 400;
+}
+
+
+
+/*----- Font ----*/
+@font-face {
+    font-family: FreightNeoProLight;
+    src: url(../fonts/FreightNeoProLight.otf);
+}
+
+@font-face {
+    font-family: obcecadaSerif;
+    src: url(../fonts/obcecada_serif/obcecada-serif-ffp.otf),
+    	 url(../fonts/obcecada_serif/obcecada-serif-ffp.ttf);
+
+}
