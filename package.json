@@ -1,31 +1,33 @@
 {
-    "name": "imeet",
-    "version": "0.0.1",
-    "private": true,
-    "main": "./app/index.html",
-    "dependencies": {
-        "body-parser": "~1.0.0",
-        "cookie-parser": "~1.0.1",
-        "debug": "~0.7.4",
-        "ejs": "~0.8.5",
-        "express": "^4.x.x"
-    },
-    "devDependencies": {
-        "gulp": "^3.8.7",
-        "gulp-shell": "^0.2.9",
-        "node-webkit-builder": "^1.0.8"
-    },
-    "window": {
-        "title": "imeet",
-        "toolbar": true,
-        "frame": true,
-        "position": "center",
-        "fullscreen": false,
-        "resizable": false,
-        "width": 1000,
-        "height": 600,
-        "min_width": 600,
-        "min_height": 400
-    },
-    "node-remote": "<local>"
+  "name": "imeet",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./app/index.html",
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "ejs": "~0.8.5",
+    "express": "^4.x.x"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-shell": "^0.2.9",
+    "node-webkit-builder": "^1.0.8",
+    "gulp-ruby-sass": "~1.0.0-alpha.3",
+    "gulp-notify": "~2.2.0"
+  },
+  "window": {
+    "title": "Node-Webkit",
+    "toolbar": true,
+    "frame": true,
+    "position": "center",
+    "fullscreen": false,
+    "resizable": false,
+    "width": 1000,
+    "height": 600,
+    "min_width": 600,
+    "min_height": 400
+  },
+  "node-remote": "<local>"
 }
