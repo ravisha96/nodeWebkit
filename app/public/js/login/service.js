@@ -1,0 +1,5 @@
+nw.service('LoginService', [function () {
+
+	
+	
+}])

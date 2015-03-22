@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('imeet', [])
+var nw = angular.module('nw', ['ui.router']);
