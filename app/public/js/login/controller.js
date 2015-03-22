@@ -7,14 +7,9 @@ nw.controller('LoginCtrl', ['$scope', 'LoginService', '$http',
 
 		$scope.loginUser = function () {
 			$http.post('/login', {
-				
 				username: $scope.username,
 				password: $scope.password
-
 			});
-
-			console.log($scope.username);
-			console.log($scope.password);
 		};
 
 	}
