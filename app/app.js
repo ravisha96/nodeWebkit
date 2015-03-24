@@ -4,25 +4,32 @@ var express = require('express'),
   	mongo = require('mongodb'),
   	bodyParser = require('body-parser'),
   	routes = require('./routes'),
-	app = express();
+	  app = express();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+  // view engine setup
+  app.set('views', path.join(__dirname, 'views'));
+  app.set('view engine', 'ejs');
 
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+  app.use(bodyParser.json());
+  app.use(bodyParser.urlencoded());
+  app.use(cookieParser());
+  app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', routes.index);
-app.post('/login', routes.login);
+  app.get('/', routes.index);
+  app.post('/login', routes.login);
 
-app.set('port', process.env.PORT || 3000);
+  app.set('port', process.env.PORT || 3000);
 
-var server = app.listen(app.get('port'), function() {
-	// log a message to console!
-});
+  var server = app.listen(app.get('port'), function() {
+  	// log a message to console!
+  });
 
-module.exports = app;
+  /**
+   * socket initialize the custom socket.io plugin
+   * @type {RegExp}
+   */
+  var socket = require('./modules/socket-io');
+  new socket(server);
+
+  module.exports = app;
