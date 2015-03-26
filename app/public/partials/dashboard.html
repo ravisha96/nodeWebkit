@@ -1,41 +1,41 @@
 <div class="dashboard-screen">
-	
+
 	<div class="side-menu-bar" ng-view="menu">
 
 		<!-- User details sections -->
 		<div class="user-detail">
 			<!-- Logo -->
-			<h1 class="heading">
-				<span>i</span>
-				<span>Conference</span>
-			</h1>
-			
+			<h1 class="heading"> iConference </h1>
+
 			<!-- Logged in user avatar picture -->
-			<div class="avtar">
-				<span class="user-name">{{user.firstname}}</span>
-				<img src="{{user.avtar}}" alt="{{user.firstname}}">
-			</div>
-			
-			<!-- container will hold user online status -->
-			<div class="online-status">
-				<select name="online-status">
+			<div class="avatar">
+
+				<img src="images/avatar.png" alt="{{user.firstname}}">
+				<span class="user-name">ravi kumar sha{{user.firstname}}</span>
+
+				<!-- container will hold user online status -->
+				<select class="online-status" name="online-status">
 					<option ng-repeat="status in user.status">
 						<div ng-style="{{status.hexcode}}">{{status.hexcode}}</div>
 						<div>{{status.name}}</div>
 					</option>
 				</select>
 			</div>
+
 		</div>
-	
+
 		<!-- Logged in user menu list based on the permissions-->
 		<nav class="menu-list">
 			<ul>
+				<li class="contacts">contacts</li>
+				<li class="files">files</li>
+				<li class="chats">chats</li>
 				<li ng-repeat="list in user.lists">{{list}}</li>
 			</ul>
 
 			<h2>Quick Starts</h2>
 		</nav>
-		
+
 		<footer>
 			settings
 		</footer>
@@ -43,13 +43,13 @@
 	</div>
 
 	<div class="stage">
-		
+
 		<div class="quick-menu-bar">
-			
+
 		</div>
-		
+
 		<div class="list-display" ng-view="list">
-			
+
 		</div>
 
 	</div>

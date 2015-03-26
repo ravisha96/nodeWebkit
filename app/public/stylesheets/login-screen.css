@@ -2,11 +2,12 @@
 	background-image:radial-gradient(circle at 50% 50%, #1faae5, #035bab);
 	width: 1000px;
 	height: 600px;
+	color: #fff;
+	font-size: 16px;
 }
 
 .login-screen footer{
 	font-size: 12px;
-	color: #fff;
 	letter-spacing: 1.3px;
 	word-spacing: 1px;
 	position: absolute;
@@ -21,7 +22,7 @@
 .login-screen .login-input-box{
 	width: 350px;
 	height: 250px;
-	padding: 50px;
+	padding: 45px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -35,9 +36,7 @@
 .login-input-box input{
 	width: 250px;
 	border: 1px solid rgba(0,0,0,.1);
-	letter-spacing: 2px;
-	color: #fff;
-	font-size: 16px;
+	letter-spacing: 2px;color: #fff;
 }
 
 .login-input-box input:focus{
@@ -57,4 +56,24 @@
 .login-input-box input[type="button"]{
 	margin-top: 20px;
 	background: rgba(141,198,64,1);
+}
+
+.login-input-box .useful-links{
+	padding-top: 40px;
+	letter-spacing: 1.2px;
+	text-transform: capitalize;
+	font-size: 14px;
+}
+
+.login-input-box .useful-links a {
+	color: #fff;
+	cursor: pointer;
+}
+
+.useful-links .forgot-password {
+	float: right;
+}
+
+.useful-links .forgot-password:hover{
+	text-decoration: underline;
 }

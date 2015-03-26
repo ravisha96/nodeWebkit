@@ -1,0 +1,105 @@
+/*----- Font ----*/
+@font-face {
+    font-family: FreightNeoProLight;
+    src: url(../fonts/FreightNeoProLight.otf);
+}
+
+@font-face {
+    font-family: obcecadaSerif;
+    src: url(../fonts/obcecada_serif/obcecada-serif-ffp.otf),
+    	 url(../fonts/obcecada_serif/obcecada-serif-ffp.ttf);
+}
+
+@font-face {
+    font-family: Calibri;
+    src: url(../fonts/Calibri.eot),
+    	 url(../fonts/Calibri.ttf);
+}
+
+@font-face {
+    font-family: Delicious-Bold;
+    src: url(../fonts/Delicious-Bold.otf)
+}
+
+@font-face {
+    font-family: Delicious-Italic;
+    src: url(../fonts/Delicious-Italic.otf)
+}
+
+@font-face {
+    font-family: Delicious-Roman;
+    src: url(../fonts/Delicious-Roman.otf)
+}
+
+@font-face {
+    font-family: Digital;
+    src: url(../fonts/digital-7.ttf)
+}
+
+@font-face {
+    font-family: Digital-Italic;
+    src: url(../fonts/digital-7-italic.ttf)
+}
+
+@font-face {
+    font-family: Digital-Mono;
+    src: url(../fonts/digital-7-mono.ttf)
+}
+
+@font-face {
+    font-family: FreightNeoPro-Light;
+    src: url(../fonts/FreightNeoProLight.otf)
+}
+
+@font-face {
+    font-family: Glyphicons-Regular;
+    src: url(../fonts/glyphicons-halflings-regular.ttf),
+    	 url(../fonts/glyphicons-halflings-regular.eot),
+    	 url(../fonts/glyphicons-halflings-regular.svg),
+    	 url(../fonts/glyphicons-halflings-regular.woff)
+}
+
+@font-face {
+    font-family: Helvetica-Bold;
+    src: url(../fonts/HelveticaNeueLTStd-Bd.otf)
+}
+
+@font-face {
+    font-family: Helvetica-Light;
+    src: url(../fonts/HelveticaNeueLTStd-Lt.otf)
+}
+
+@font-face {
+    font-family: Helvetica-Medium;
+    src: url(../fonts/HelveticaNeueLTStd-Md.otf)
+}
+
+@font-face {
+    font-family: Helvetica-Roman;
+    src: url(../fonts/HelveticaNeueLTStd-Roman.otf)
+}
+
+@font-face {
+    font-family: LucidaSans-Regular;
+    src: url(../fonts/LucidaSansRegular.ttf)
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.eot)
+}
+
+@font-face {
+    font-family: UniversLTStd;
+    src: url(../fonts/UniversLTStd.otf)
+}
+
+@font-face {
+    font-family: UniversLTStd-Cn;
+    src: url(../fonts/UniversLTStd-Cn.eot)
+}
+
+@font-face {
+    font-family: UniversLTStd-Cn;
+    src: url(../fonts/UniversLTStd-UltraCn.otf)
+}

@@ -1,26 +1,94 @@
 .dashboard-screen {
-	/*background-image:radial-gradient(circle at 50% 50%, #1faae5, #035bab);*/
 	width: 1000px;
 	height: 600px;
 	color: #fff;
+}
+
+.dashboard-screen .active {
+	height: inherit;
+	padding: 2px 0;
+	background: #1faae5;
 }
 
 .dashboard-screen .side-menu-bar {
 	width: 250px;
 	height: inherit;
 	float: left;
-	background: rgba(48,50,59,1);
+	background-image:radial-gradient(circle at 50% 50%, #1faae5, #035bab);
 	box-shadow: 0px 0px 5px rgba(0,0,0,1);
 	padding-left: 10px;
-	font-family: 'obcecadaSerif';
 }
 
 .dashboard-screen .heading {
 	letter-spacing: 3px;
+	padding: 0 0 15px 5px;
+	margin-left: 5px;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-
 .dashboard-screen .online-status{
-	width: 200px;
-	font-size: 12px;
+	width: 140px;
+	vertical-align: middle;
+	border: 0;
+	color: #fff;
+	margin-top: 20px;
+}
+
+.dashboard-screen .online-status:focus{
+	border: none;
+}
+
+.avatar {
+	padding: 15px 5px;
+	height: 85px;
+	width: inherit;
+	font-family: 'FreightNeoPro-Light';
+	font-size: 14px;
+	text-transform: capitalize;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.avatar img{
+	max-width: 40px;
+	border-radius: 8px;
+	border: 3px solid #fff;
+	margin-right: 15px;
+}
+
+.avatar .user-name {
+	letter-spacing: 1px;
+	vertical-align: middle;
+	position: absolute;
+	margin-left: 5px;
+}
+
+.dashboard-screen .menu-list {
+	font-family: 'FreightNeoPro-Light';
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+.dashboard-screen .menu-list li{
+	padding: 5px 10px;
+	width: 240px;
+}
+
+.dashboard-screen .menu-list li:before {
+	content: " ";
+	display: inline-block;
+	width: 40px;
+	height: 26px;
+	vertical-align: sub;
+}
+
+.dashboard-screen .menu-list .contacts:before {
+	background: url('../images/menu-icons.png');
+	background-position: -11px -15px;
+}
+
+.dashboard-screen .menu-list .files:before {
+	background: url('../images/menu-icons.png');
+	background-position: -15px -212px;
 }

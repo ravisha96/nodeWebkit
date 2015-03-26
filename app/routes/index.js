@@ -11,8 +11,7 @@
 		},
 
 		this.login = function (req, res) {
-			console.log(res);
-			console.log(req);
+			console.log(req.body);
 		}
 
 	}

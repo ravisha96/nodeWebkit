@@ -13,22 +13,26 @@
 
       // First event and recursive, event called when a new user join our chat.
       // This event notifies our application that new client opened a new connection.
-      // socket param is a event emitter that can trigger various other event based on the
-      // server message.
       self.io.on('connection', self.connected);
 
 
     }
 
-
+    /**
+     * connected on socket connection established.
+     * @param  {object} socket is a event emitter that can trigger various other event based on server message.
+     * @return {[type]}        [description]
+     */
     Socket.prototype.connected = function (socket) {
 
+      socket.emit('message', { message: 'Hello World' });
+
+      socket.on('send', function (data) {
+        console.log(data);
+      });
 
 
     }
-
-
-
 
 
     module.exports = Socket;

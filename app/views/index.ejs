@@ -2,20 +2,23 @@
 <html ng-app="nw">
 <head>
 	<title>iConference</title>
-	
+
 	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,900italic' rel='stylesheet' type='text/css'>
 
 	<!-- Vendor Stylesheets -->
-  	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
-	
+  <!-- <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css"> -->
+
 	<!-- Application Stylesheets -->
-  	<link rel="stylesheet" href="stylesheets/app.css">
-  	<link rel="stylesheet" href="stylesheets/login-screen.css">
-  	<link rel="stylesheet" href="stylesheets/dashboard-screen.css">
-	
+	<link rel="stylesheet" href="stylesheets/fonts.css">
+	<link rel="stylesheet" href="stylesheets/app.css">
+	<link rel="stylesheet" href="stylesheets/login-screen.css">
+	<link rel="stylesheet" href="stylesheets/dashboard-screen.css">
+	<link rel="stylesheet" href="stylesheets/chat-screen.css">
+
 	<!-- Vendor Plugin -->
+	<script src="libs/socket.io-client/socket.io.js"></script>
 	<script src="libs/angular/angular.min.js"></script>
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -31,17 +34,18 @@
 	<script src="js/login/controller.js"></script>
 	<script src="js/login/service.js"></script>
 
+	<!-- Chat -->
+	<script src=""></script>
+
 	<!-- Application Code -->
-	<script src="js/routes.js"></script>	
+	<script src="js/routes.js"></script>
 
 </head>
 </head>
 <body>
 
-	<div class="container-fluid">
-		<div ui-view></div>
-   		<!-- <div ng-include src="'partials/login.html'"></div> -->
-   		
+	<div class="container" ui-view>
+		<!-- <div ng-include src="'partials/login.html'"></div> -->
 	</div>
 </body>
 </html>
