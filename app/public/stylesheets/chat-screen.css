@@ -1,9 +1,116 @@
 .chat-screen {
   width: 100%;
   height: 100%;
-  background-image:radial-gradient(circle at 50% 50%, #1faae5, #035bab);
+  font-family: 'FreightNeoPro-Light';
 }
 
-.chat-screen {
-  
+.quick-menu {
+  width: 325px;
+  height: 100%;
+  background: #F0F9FC;
+  padding-right: 1px;
+  float: left;
+}
+
+/**
+ * User Information
+ */
+.quick-menu .user-info {
+  width: 320px;
+  height: 80px;
+  background: #00B1F3;
+  padding: 20px;
+}
+
+.user-info .display-image {
+  max-width: 80px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.user-info figure{
+  display: inline-block;
+  width: 100px;
+  float: left;
+}
+
+.user-info .online-status-color {
+  position: absolute;
+  top: 75px;
+  left: 80px;
+  background: greenyellow;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  border: 2px solid rgba(0,0,0,0.5);
+  text-indent: -999px;
+}
+
+.user-info .user-details {
+  display: inline-block;
+  verticle-align: center;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.user-details h5{
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.user-details:last-child{
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/**
+ * Search User
+ */
+.quick-menu .search-user {
+  margin-top: 25px;
+  width: 360px;
+}
+
+.search-user .search{
+  width: 320px;
+  padding: 10px 0 10px 40px;
+  background: url('../images/icons-sprite.png') no-repeat 10px -1140px;
+  border: none;
+  font-size: 14px;
+  border-bottom: 1px solid #1faae5;
+  border-bottom: 1px solid #1faae5;
+  border-right: 1px solid #1faae5;
+  letter-spacing: 1px;
+  color: #00aeef;
+  font-family: 'FreightNeoPro-Light';
+}
+
+.search:focus {
+  outline: 0;
+}
+
+/**
+ * Quick Navigation Menu
+ */
+.quick-nav{
+  padding: 20px;
+}
+
+.quick-nav ul{
+  list-style: none;
+}
+
+.quick-nav li i {
+  color: #1faae5;
+}
+
+.quick-nav .home{
+  padding-left: 20px;
+  background: url('../images/icons-sprite.png')
+}
+
+.quick-nav .home i{
+  padding-left: 20px;
+  background: url('../images/icons-sprite.png')
 }

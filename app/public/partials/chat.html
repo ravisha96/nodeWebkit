@@ -1,33 +1,48 @@
 <div class="chat-screen">
 
   <!-- User details sections -->
-  <article class="">
-    <section class="user-detail">
-        <img src="images/avatar.png" alt="">
-        <div>
-          <span class="user-name">ravi kumar sha</span>
-          <span>online</span>
-        </div>
-    </section>
-    h1
-    <!-- Logo
-    <h1 class="heading"> iConference </h1>
+<!--   <section class="quick-menu">
 
-    Logged in user avatar picture
-    <div class="avatar">
+      <article class="user-info">
 
-      <img src="images/avatar.png" alt="{{user.firstname}}">
+        <header>
+
+          <figure>
+            <img class="display-image" src="images/avatar.png" alt="">
+            <div class="online-status-color">online</div>
+          </figure>
+
+          <div class="user-details">
+            <h5 class="user-name">ravi kumar sha</h5>
+            <span class="online-status">online</span>
+          </div>
 
 
-      container will hold user online status
-      <select class="online-status" name="online-status">
-        <option ng-repeat="status in user.status">
-          <div ng-style="{{status.hexcode}}">{{status.hexcode}}</div>
-          <div>{{status.name}}</div>
-        </option>
-      </select>
-    </div> -->
+        </header>
 
+      </article>
+
+      <article class="search-user">
+        <input type="text" class="search">
+      </article>
+
+      <nav class="quick-nav">
+        <ul>
+          <li class="phone"><i class="fa fa-home fa-2x">&nbsp;</i><a href="#">home</a></li>
+          <li class="chat-history"><i class="fa fa-history fa-2x">&nbsp;</i><a href="#">groups</a></li>
+          <li class="chat-history"><i class="fa fa-history fa-2x">&nbsp;</i><a href="#">chat history</a></li>
+        </ul>
+      </nav>
+  </section> -->
+
+  <section chat-directive class="display-chat-msg">
+  
+  </section>
+
+  <section class="send-msg">
+    <form onsubmit="return false">
+      <input type="text" id="chat" data-send-chat-msg="">
+    </form>
   </section>
 
 </div>

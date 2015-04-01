@@ -15,7 +15,6 @@
       // This event notifies our application that new client opened a new connection.
       self.io.on('connection', self.connected);
 
-
     }
 
     /**
