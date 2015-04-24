@@ -1,16 +1,41 @@
 .dashboard-screen {
-	/*background-image:radial-gradient(circle at 50% 50%, #1faae5, #035bab);*/
+	background-image: radial-gradient(circle at 50% 0%, #1faae5, #035bab, #00296B);
 	width: 1000px;
 	height: 600px;
 	color: #fff;
+}
+
+.dashboard-screen .blur {
+	width: inherit;
+	height: inherit;
+	background-image: radial-gradient(circle at 50% 0%, rgba(0,0,0,.1), rgba(0,0,0,.1), rgba(0,0,0,.6) );
+}
+
+.dashboard-screen .container {
+	width: inherit;
+	height: inherit;
+	background: #000;
+	opacity: 0.09;
+	-webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+  	filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+}
+
+
+.dashboard-screen header{
+	height: 60px;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	padding-top: 10px;
+}
+
+.dashboard-screen header img {
+	max-width: 40px;
 }
 
 .dashboard-screen .side-menu-bar {
 	width: 250px;
 	height: inherit;
 	float: left;
-	background: rgba(48,50,59,1);
-	box-shadow: 0px 0px 5px rgba(0,0,0,1);
+	border-right: 1px solid #BDEBFF;
 	padding-left: 10px;
 	font-family: 'obcecadaSerif';
 }

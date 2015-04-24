@@ -6,7 +6,7 @@ nw.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $ur
 	 * | Ideal state
 	 * | Automatically logged out
 	 */
-	$urlRouterProvider.otherwise('/login');
+	$urlRouterProvider.otherwise('/dashboard');
 
 
 	$stateProvider

@@ -30,3 +30,11 @@ body{
     	 url(../fonts/obcecada_serif/obcecada-serif-ffp.ttf);
 
 }
+
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}

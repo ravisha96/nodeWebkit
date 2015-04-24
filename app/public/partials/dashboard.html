@@ -1,57 +1,15 @@
-<div class="dashboard-screen">
-	
-	<div class="side-menu-bar" ng-view="menu">
-
-		<!-- User details sections -->
-		<div class="user-detail">
-			<!-- Logo -->
-			<h1 class="heading">
-				<span>i</span>
-				<span>Conference</span>
-			</h1>
-			
-			<!-- Logged in user avatar picture -->
-			<div class="avtar">
-				<span class="user-name">{{user.firstname}}</span>
-				<img src="{{user.avtar}}" alt="{{user.firstname}}">
-			</div>
-			
-			<!-- container will hold user online status -->
-			<div class="online-status">
-				<select name="online-status">
-					<option ng-repeat="status in user.status">
-						<div ng-style="{{status.hexcode}}">{{status.hexcode}}</div>
-						<div>{{status.name}}</div>
-					</option>
-				</select>
-			</div>
-		</div>
-	
-		<!-- Logged in user menu list based on the permissions-->
-		<nav class="menu-list">
-			<ul>
-				<li ng-repeat="list in user.lists">{{list}}</li>
-			</ul>
-
-			<h2>Quick Starts</h2>
-		</nav>
+<div class="dashboard-screen">	
+	<div class="blur">
 		
-		<footer>
-			settings
-		</footer>
+		<div class="container">
+			<header>
 
-	</div>
+				<div class="right">
+					<img src="../images/avatar.png" alt="">
+				</div>
 
-	<div class="stage">
-		
-		<div class="quick-menu-bar">
-			
-		</div>
-		
-		<div class="list-display" ng-view="list">
-			
+			</header>
 		</div>
 
 	</div>
-
 </div>
