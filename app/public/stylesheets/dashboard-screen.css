@@ -1,7 +1,5 @@
 .dashboard-screen {
 	background-image: radial-gradient(circle at 50% 0%, #1faae5, #035bab, #00296B);
-	width: 1000px;
-	height: 600px;
 	color: #fff;
 }
 
@@ -11,25 +9,74 @@
 	background-image: radial-gradient(circle at 50% 0%, rgba(0,0,0,.1), rgba(0,0,0,.1), rgba(0,0,0,.6) );
 }
 
-.dashboard-screen .container {
-	width: inherit;
-	height: inherit;
+/*.dashboard-screen .main-container {
 	background: #000;
 	opacity: 0.09;
 	-webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
   	filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
-}
-
+}*/
 
 .dashboard-screen header{
-	height: 60px;
+	height: 70px;
 	border-bottom: 1px solid rgba(255,255,255,.5);
-	padding-top: 10px;
+	-webkit-filter: drop-shadow(0px 5px 4px rgba(0,0,0,0.3));
+  	filter: drop-shadow(0px 5px 4px rgba(0,0,0,0.3));
 }
 
-.dashboard-screen header img {
-	max-width: 40px;
+/**
+ * Header User Information Section
+ */
+.dashboard-screen .user-info {
+	border-left: 1px solid rgba(0,0,0,.15);
+	height: inherit;
 }
+
+.dashboard-screen header figure {
+	max-width: 40px;
+	vertical-align: middle;
+	position: relative;
+	display: inline-block;
+}
+
+.dashboard-screen .avatar {
+	max-height: 30px;
+}
+
+.drop-down-icon{
+	line-height: 28px;		
+}
+s
+.dashboard-screen .user-name {
+	font-size: 1.8em;
+	letter-spacing: .09em;
+	text-transform: capitalize;
+	display: inline-block;
+	text-align: center;
+}
+
+
+
+/**
+ * Header Message Box Section
+ */
+.msg-box {
+	margin-top: 10px;
+	padding: .2em;
+	padding-left: 6em; 
+	background: rgba(0,0,0,.15);
+	border: 0;
+	font-size: 2em;
+	width: 100%;
+	background: url('../images/menu-icons.png') no-repeat scroll 0 -202px;
+}
+
+
+
+
+/**
+ * 
+ */
+
 
 .dashboard-screen .side-menu-bar {
 	width: 250px;
